@@ -21,7 +21,7 @@ print(data)
 
 data['Date'] = pd.to_datetime(data['TimeStamp'],unit='ms')
 
-print(data0
+print(data)
 
 candlestick_data = data.groupby(data.Date.dt.date).agg({'Price':['min','max','first','last']})
 
